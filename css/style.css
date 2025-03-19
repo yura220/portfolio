@@ -1,0 +1,47 @@
+/* 구글폰트 */
+body{
+  font-family: "Noto Sans KR", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+  /* 레이아웃 스타일링  */
+  .wrap{
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 좌측(텍스트) - 우측(카드) 두 개의 컬럼 */
+  align-items: center; /* 세로 정렬 */
+  /*! width: 100%; */
+  max-width: 1440px;
+  margin: 0 auto;
+  gap: 40px; /* 좌우 간격 조정 */
+  }
+  .flex-column-ceter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    justify-content: center;
+    height: 100%;
+  }
+  /* 텍스트 스타일링 */
+  .h1{
+    font-size:55px;
+  }
+  .h2{
+    font-size:45px;
+  }
+  .h3{
+    font-size:35px;
+  }
+  .h4{
+    font-size:25px;
+  }
+  .h5{
+    font-size:20px;
+  }
+  .h6{
+    font-size:18px;
+  }
+  .p{
+    font-size:16px;
+  }
