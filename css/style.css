@@ -15,13 +15,12 @@ body{
   margin: 0 auto;
   gap: 40px; /* 좌우 간격 조정 */
   }
-  .flex-column-ceter{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-    justify-content: center;
-    height: 100%;
+  .flex-column-center{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  justify-content: center;
   }
   /* 텍스트 스타일링 */
   .h1{
