@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/portfolio.css">
     <link rel="stylesheet" href="css/footer.css">
     <!-- 구글폰트 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,10 +27,10 @@
         </nav>
     </header>
     <!-- 타이틀영역 -->
-    <div class="title">
+    <div id="title">
         <div class="wrap flex-column-center">
             <div>
-            <h2 id="title">I'M YURA AND<br><sapn>I'M A DESIGNER</sapn></h2>
+            <h2 class="name">I'M YURA AND<br><sapn>I'M A DESIGNER</sapn></h2>
             </div>
         </div>
         <video autoplay="" loop="" muted="" poster="" >
@@ -94,116 +95,150 @@
             </div>
         </section>
         <section id="stack">
-            <div class="wrap flex-column-ceter">
+            <div class="wrap flex-column-center">
                 <span>
-                    <h2>Tech Stack</h2>
+                    <h2 class="h1">Tech Stack</h2>
                     <p>업무 경험을 통해 익숙하게 다룬 디자인 툴과<br>퍼블리싱 과정에서 학습한 기술들을 소개합니다.</p>
                 </span>
                     <div class="stackp">
                         <div class="left">
-                            <h3 id="design">DESIGN</h3>
+                            <h3 id="design" class="h3">DESIGN</h3>
                             <p id="designparagraph">편집 디자이너로 근무하며 Photoshop, Illustrator, InDesign 등 다양한<br>디자인 툴을 능숙하게 다뤄왔습니다. 인쇄물부터 브랜드 디자인까지 폭넓은<br>경험을 바탕으로, 목적에 맞는 비주얼을 효과적으로 제작할 수 있습니다.<br>또한, 사내 홈페이지 디자인 및 브랜드 아이덴티티 구축 경험을 통해 사용자<br>중심의 시각적 커뮤니케이션을 구현할 수 있습니다. 이후 Figma를 추가로<br>학습하여, 웹 및 UI 디자인 작업까지 확장해 나가고 있습니다.</p>
-                            <h3 id="publishing">PUBLISING</h3>
+                            <h3 id="publishing" class="h3">PUBLISING</h3>
                             <p id="publishinggp">웹 퍼블리싱 과정에서 HTML, CSS, JavaScript, jQuery, SASS를 활용한<br>마크업과 개발을 익히며, 웹 접근성과 반응형 디자인을 고려한 코드 작업이<br>가능합니다.<br>또한, React.js에 대한 기초적인 이해를 바탕으로 동적인 UI 구현이 가능하며,<br>웹 최적화와 사용자 경험 향상을 위해 지속적으로 학습하고 있습니다.</p>
                         </div>
                         <div class="right">
-                            <ul>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
+                            <ul class="l_icon">
+                                <li class="score_5"><p class="xxs"><span>PHOTOSHOP</span></p></li>
+                                <li class="score_5"><p class="xxs"><span>ILLUSTRATION</span></p></li>
+                                <li class="score_3"><p class="xxs"><span>IN DESIGN</span></p></li>
+                                <li class="score_4"><p class="xxs"><span>FIGMA</span></p></li>
+                                <li class="score_3"><p class="xxs"><span>SASS</span></p></li>
+                            </ul>
+                            <ul class="r_icon">
+                                <li class="score_4"><p class="xxs"><span>HTML</span></p></li>
+                                <li class="score_4"><p class="xxs"><span>CSS</span></p></li>
+                                <li class="score_3"><p class="xxs"><span>JAVASCRIPT</span></p></li>
+                                <li class="score_3"><p class="xxs"><span>JQUERY</span></p></li>
+                                <li class="score_2"><p class="xxs"><span>REACT</span></p></li>
                             </ul>
                         </div>
                 </div>
             </div>
         </section>
         <section id="portfolio">
-            <div class="wrap flex-column-ceter">
+            <div class="wrap flex-column-center">
                 <h2>PORTFOLIO</h2>
-                <ul>
+                <ul class="white">
                     <li>
-                        <h3>포트폴리오 제목</h3>
-                        <p>DETAILS</p>
-                        <p>VISIT</p>
+                        <h3 class="h6">포트폴리오 1</h3>
+                        <span>
+                            <a href="#" class="btn">DETAILS</a>
+                            <a href="#" class="btn">VISIT</a>
+                        </span>
+                        <a href="#" class="poimg"></a>
                     </li>
                     <li>
-                        <h3>포트폴리오 제목</h3>
-                        <p>DETAILS</p>
-                        <p>VISIT</p>
-                    </li>                
-                    <li>
-                        <h3>포트폴리오 제목</h3>
-                        <p>DETAILS</p>
-                        <p>VISIT</p>
-                    </li>                
-                    <li>
-                        <h3>포트폴리오 제목</h3>
-                        <p>DETAILS</p>
-                        <p>VISIT</p>
-                    </li>                
-                    <li>
-                        <h3>포트폴리오 제목</h3>
-                        <p>DETAILS</p>
-                        <p>VISIT</p>
-                    </li>                
-                    <li>
-                        <h3>포트폴리오 제목</h3>
-                        <p>DETAILS</p>
-                        <p>VISIT</p>
-                    </li>                
-                    <li>
-                        <h3>포트폴리오 제목</h3>
-                        <p>DETAILS</p>
-                        <p>VISIT</p>
-                    </li>                
-                    <li>
-                        <h3>포트폴리오 제목</h3>
-                        <p>DETAILS</p>
-                        <p>VISIT</p>
-                    </li>                
-                    <li>
-                        <h3>포트폴리오 제목</h3>
-                        <p>VISIT</p>
+                        <h3 class="h6">포트폴리오 2</h3>
+                        <span>
+                            <a href="#" class="btn">DETAILS</a>
+                            <a href="#" class="btn">VISIT</a>
+                        </span>
+                        <a href="#" class="poimg"></a>
                     </li>
                     <li>
-                    <h3>포트폴리오 제목</h3>
-                    <p>VISIT</p>
+                        <h3 class="h6">포트폴리오 3</h3>
+                        <span>
+                            <a href="#" class="btn">DETAILS</a>
+                            <a href="#" class="btn">VISIT</a>
+                        </span>
+                        <a href="#" class="poimg"></a>
                     </li>
                     <li>
-                        <h3>포트폴리오 제목</h3>
-                        <p>VISIT</p>
+                        <h3 class="h6">포트폴리오 4</h3>
+                        <span>
+                            <a href="#" class="btn">DETAILS</a>
+                            <a href="#" class="btn">VISIT</a>
+                        </span>
+                        <a href="#" class="poimg"></a>
                     </li>
                     <li>
-                        <h3>포트폴리오 제목</h3>
-                        <p>VISIT</p>
+                        <h3 class="h6">포트폴리오 5</h3>
+                        <span>
+                            <a href="#" class="btn">DETAILS</a>
+                            <a href="#" class="btn">VISIT</a>
+                        </span>
+                        <a href="#" class="poimg"></a>
                     </li>
                     <li>
-                        <h3>포트폴리오 제목</h3>
-                        <p>VISIT</p>
+                        <h3 class="h6">포트폴리오 6</h3>
+                        <span>
+                            <a href="#" class="btn">DETAILS</a>
+                            <a href="#" class="btn">VISIT</a>
+                        </span>
+                        <a href="#" class="poimg"></a>
                     </li>
                     <li>
-                        <h3>포트폴리오 제목</h3>
-                        <p>VISIT</p>
+                        <h3 class="h6">포트폴리오 7</h3>
+                        <span>
+                            <a href="#" class="btn">DETAILS</a>
+                            <a href="#" class="btn">VISIT</a>
+                        </span>
+                        <a href="#" class="poimg"></a>
                     </li>
                     <li>
-                        <h3>포트폴리오 제목</h3>
-                        <p>VISIT</p>
+                        <h3 class="h6">포트폴리오 8</h3>
+                        <span>
+                            <a href="#" class="btn">DETAILS</a>
+                            <a href="#" class="btn">VISIT</a>
+                        </span>
+                        <a href="#" class="poimg"></a>
                     </li>
                     <li>
-                        <h3>포트폴리오 제목</h3>
-                        <p>VISIT</p>
+                        <h3 class="h6">포트폴리오 9</h3>
+                        <a href="#" class="btn">VISIT</a>
+                        <a href="#" class="poimg"></a>
+                    </li>
+                    <li>
+                        <h3 class="h6">포트폴리오 10</h3>
+                        <a href="#" class="btn">VISIT</a>
+                        <a href="#" class="poimg"></a>
+                    </li>
+                    <li>
+                        <h3 class="h6">포트폴리오 11</h3>
+                        <a href="#" class="btn">VISIT</a>
+                        <a href="#" class="poimg"></a>
+                    </li>
+                    <li>
+                        <h3 class="h6">포트폴리오 12</h3>
+                        <a href="#" class="btn">VISIT</a>
+                        <a href="#" class="poimg"></a>
+                    </li>
+                    <li>
+                        <h3 class="h6">포트폴리오 13</h3>
+                        <a href="#" class="btn">VISIT</a>
+                        <a href="#" class="poimg"></a>
+                    </li>
+                    <li>
+                        <h3 class="h6">포트폴리오 14</h3>
+                        <a href="#" class="btn">VISIT</a>
+                        <a href="#" class="poimg"></a>
+                    </li>
+                    <li>
+                        <h3 class="h6">포트폴리오 15</h3>
+                        <a href="#" class="btn">VISIT</a>
+                        <a href="#" class="poimg"></a>
+                    </li>
+                    <li>
+                        <h3 class="h6">포트폴리오 16</h3>
+                        <a href="#" class="btn">VISIT</a>
+                        <a href="#" class="poimg"></a>
                     </li>
                 </ul>
             </div>
         </section>
         <section id="happy">
-            <div class="wrap flex-column-ceter">
+            <div class="wrap flex-column-center">
                 <h2>My Happy List</h2>
                 <p>나만의 즐거움을 찾고, 몰입하며, 새로운 경험을 쌓아가는 시간들.<br>소소한 행복이 모여 나를 채우는 순간들을 담았습니다.</p>
                 <ul>
@@ -223,8 +258,8 @@
             </div>
         </section>
         <section id="contact">
-            <div class="wrap flex-column-ceter">
-                <h2>Thank you for visiting!</h2>
+            <div class="wrap flex-column-center">
+                <h2 class="h1">Thank you for visiting!</h2>
                 <p>포트폴리오를 방문해 주셔서 감사합니다.<br>새로운 기회와 멋진 프로젝트에 대해 함께 이야기 나눌 수 있기를 기대합니다.<br>저는 끊임없이 배우며 성장하는 웹퍼블리셔로서,<br>사용자에게 가치 있는 경험을 제공하기 위해 노력하고 있습니다.</p>
                 <p>문의나 협업 제안이 있다면 언제든 편하게 연락 주세요.<br>
                 소중한 메시지에 최대한 빠르고 성심껏 답변드리겠습니다!</p>
