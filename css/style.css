@@ -7,21 +7,18 @@ body{
 }
   /* 레이아웃 스타일링  */
   .wrap{
-  display: grid;
-  grid-template-columns: 1fr 1fr; /* 좌측(텍스트) - 우측(카드) 두 개의 컬럼 */
-  align-items: center; /* 세로 정렬 */
-  /*! width: 100%; */
+   /* 세로 정렬 */
   max-width: 1440px;
   margin: 0 auto;
-  gap: 40px; /* 좌우 간격 조정 */
+   /* 좌우 간격 조정 */
   }
-  .flex-column-ceter{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-    justify-content: center;
-    height: 100%;
+  .flex-column-center{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  justify-content: center;
+  height: 100%;
   }
   /* 텍스트 스타일링 */
   .h1{
@@ -31,7 +28,7 @@ body{
     font-size:45px;
   }
   .h3{
-    font-size:35px;
+    font-size:40px;
   }
   .h4{
     font-size:25px;
@@ -45,3 +42,10 @@ body{
   .p{
     font-size:16px;
   }
+.xxs{
+  font-size:10px !important;
+}
+/* 컬러 */
+.white{
+  color:white;
+}
