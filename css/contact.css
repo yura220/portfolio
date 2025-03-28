@@ -80,6 +80,8 @@
   border: 0;
   border-bottom: 1px solid;
   grid-row: 3;
+  resize: none;
+  overflow: auto;
 }
 #contact textarea::placeholder{
   font-family: 'Paperlogy-8ExtraBold';
@@ -94,6 +96,7 @@
   background-color: #272727;
   color: white;
   grid-row: 4;
+  cursor: pointer;
 }
 
 #contact div.social-links {

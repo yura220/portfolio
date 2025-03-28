@@ -4,7 +4,7 @@ body {
 }
 
 /* 헤더 */
-header {position: fixed;width: 100%;z-index: 20;height: 70px;background-color: #0005;}
+header {position: fixed;width: 100%;z-index: 20;height: 70px;}
 
 header nav {
   max-width: 1440px;
@@ -20,16 +20,32 @@ header nav {
 }
 
 header h1 {
-  font-size: 30px;
+  font-size: 0;
 }
-
+header h1 a{
+  color:white;
+}
+header h1 a:hover::before{
+  background-image:url(../img/svg/logo_g.svg);
+}
+header h1 a::before{
+  content:'';
+  background-image: url(../img/svg/logo_w.svg);
+  display: block;
+  width: 35px;
+  height: 35px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 header ul {
   display: flex;
   gap: 60px;
 }
 
 header ul li {}
-
+header ul li a{color: #fff;}
+header ul li a:hover{color: #2A5326;}
 /* 메인 컨텐츠 레이아웃 */
 body #title{
   height: 100%;
@@ -232,6 +248,7 @@ main #many .flex-column-center {
 }
 #stack div.left h3 {
   color: #A68A6D;
+  margin-bottom: 20px;
 }
 #stack div.left h3#design {
 }

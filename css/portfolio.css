@@ -13,9 +13,12 @@
   font-family: 'Paperlogy-8ExtraBold';
   font-weight: 900;
 }
-
+.typo{
+  opacity: 0;
+   transition: opacity 0.6s ease;
+}
 #portfolio ul {
-  display: none;
+  display: grid;
   grid-template-columns: repeat(4,350px);
   grid-template-rows: repeat(4,210px);
   gap: 13px;
