@@ -1,0 +1,57 @@
+#happy{background-color: #fffcee;width: 100%;}
+#happy div.wrap {
+  max-width: 100%;
+  flex-direction: column;
+  margin: 0;
+  justify-content: center;
+  height: 100%;
+}
+#happy div.happy_top{
+  
+  display: flex;
+  align-items: last baseline;
+  gap: 20px;
+  padding-left: calc(( 100% - 1440px - 17px) / 2);
+  padding-bottom: 50px;
+}
+
+#happy h2.h1 {
+  color: #291e0c;
+}
+
+#happy p.p {
+  color: #291e0c;
+}
+
+#happy div.happylist {
+  height: 600px;
+}
+
+#happy .happylist ul {
+  display: flex;
+  height: 100%;
+  gap: 2px;
+  margin-bottom: -20px;
+}
+
+#happy .happylist li {
+  width: 20%;
+  background-color: #ccc;
+}
+
+#happy .happylist a.block {
+  height: 100%;
+  display: flex;
+}
+
+#happy .happylist h3.h3 {
+  padding: 400px 0 0 50px;
+  color: white;
+}
+
+#happy .happylist span.block {
+}
+
+#happy .happylist p.p {
+  display: none;
+}

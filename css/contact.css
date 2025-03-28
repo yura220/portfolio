@@ -1,0 +1,117 @@
+#contact{background-color: #fff;display: flex;flex-direction: column;justify-content: space-between;}
+#contact div.wrap {
+  align-items: baseline;
+  padding-top: 70px;
+  gap: 0;
+  box-sizing: border-box;
+}
+
+#contact div.grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto 850px;
+  grid-template-rows: auto 90px;
+  height: 75%;
+}
+
+#contact div.thank_left {
+  grid-column: 1;
+  grid-row: 1;
+  padding-top: 30px;
+}
+
+#contact h2.h1 {
+  padding-bottom: 20px;
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid;
+}
+
+#contact p.p {
+  padding-bottom: 20px;
+  line-height: 2.1;
+}
+
+#contact address {
+  font-weight: 600;
+}
+
+#contact address p {
+}
+#contact address p.num {
+}
+#contact address p.mail {
+}
+#contact address span {
+  font-weight: 400;
+}
+#contact address p.num span{
+  padding-left: 30px;
+}
+#contact address p.mail span{
+   padding-left: 16px;
+}
+#contact form {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  display: grid;
+  height: 100%;
+  grid-template-columns: 1fr;
+  grid-template-rows: 75px 75px 1fr 50px;
+  gap: 0;
+  padding-left: 20px;
+}
+
+#contact label {
+}
+
+#contact input {
+  height: 75px;
+  border: 0;
+  grid-row: 1;
+}
+#contact #email{border-top: 1px solid #000;border-bottom: 1px solid #000;grid-row: 2;box-sizing: border-box;}
+#contact textarea {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 20px 0;
+  height: 80%;
+  border: 0;
+  border-bottom: 1px solid;
+  grid-row: 3;
+}
+#contact textarea::placeholder{
+  font-family: 'Paperlogy-8ExtraBold';
+  font-size: 18px;
+  font-weight: 500;
+  height: 100%;
+}
+#contact button.submit-button {
+  width: 100%;
+  height: 50px;
+  border: 0;
+  background-color: #272727;
+  color: white;
+  grid-row: 4;
+}
+
+#contact div.social-links {
+  grid-column: 1;
+  grid-row: 2;
+  display: flex;
+  gap: 40px;
+  align-items: end;
+  padding-bottom: 20px;
+}
+
+#contact .social-links a {
+}
+#footer{
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+#footer p{text-align: center;}
