@@ -83,12 +83,16 @@
   resize: none;
   overflow: auto;
 }
+#contact input:focus{outline: none;}
+#contact input:focus::placeholder{color:#A68A6D;}
 #contact textarea::placeholder{
   font-family: 'Paperlogy-8ExtraBold';
   font-size: 18px;
   font-weight: 500;
   height: 100%;
 }
+#contact textarea:focus{outline: none;}
+#contact textarea:focus::placeholder{color:#A68A6D;}
 #contact button.submit-button {
   width: 100%;
   height: 50px;

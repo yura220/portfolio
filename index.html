@@ -1,21 +1,28 @@
 <!DOCTYPE html>
 <html lang="ko">
-    <head>
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YURA Portfolio</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/title.css">
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/portfolio.css">
     <link rel="stylesheet" href="css/happy.css">
     <link rel="stylesheet" href="css/contact.css">
     <link rel="stylesheet" href="css/footer.css">
+
     <!-- 구글폰트 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
+
 <body>
     <!-- 상단영역 -->
     <header>
@@ -32,10 +39,22 @@
     <div id="title">
         <div class="wrap flex-column-center">
             <div>
-            <h2 class="name">I'M YURA AND<br><sapn>I'M A DESIGNER</sapn></h2>
+                <h2 class="name">I'M YURA, AND I<br>
+                    <span class=" content">
+                        <span class="content__container">
+                            <ul class="content__container__list">
+                                <li class="content__container__list__item">WEB CREATOR!</li>
+                                <li class="content__container__list__item">CREATIVE DEVELOPER!</li>
+                                <li class="content__container__list__item">FRONT-END DESIGNER!</li>
+                                <li class="content__container__list__item">DESIGN TECHNOLOGIST!</li>
+                                <li class="content__container__list__item">WEB CREATOR!</li>
+                            </ul>
+                        </span>
+                    </span>
+                </h2>
             </div>
         </div>
-        <video autoplay="" loop="" muted="" poster="" >
+        <video autoplay="" loop="" muted="" poster="">
             <source src="https://cdn.pixabay.com/video/2023/03/01/152740-803732906_large.mp4" type="video/mp4">
         </video>
     </div>
@@ -46,20 +65,20 @@
                 <!-- 좌측 Article -->
                 <article>
                     <h2>I’M MANY<br>THINGS.</h2>
-                    <p class="p" >
+                    <p class="p">
                         <span>#Graphics #Web #Writing #Efficient #Responsible<br>
-                        저는 한 가지 모습에 머물지 않습니다. 창작하고, 개발하며, 늘 새로운 것에<br>
-                        도전합니다. 저의 여러 가지 모습을 이곳에서 확인할 수 있습니다.</span>
+                            저는 한 가지 모습에 머물지 않습니다. 창작하고, 개발하며, 늘 새로운 것에<br>
+                            도전합니다. 저의 여러 가지 모습을 이곳에서 확인할 수 있습니다.</span>
                     </p>
                 </article>
-        
+
                 <!-- 우측 box -->
                 <div class="right-section">
                     <div class="box">
                         <ul>
                             <li>
                                 <h3>다양한 소재, 무한한 표현</h3>
-                                <p class="p" >6년간 판촉물, 프랜차이즈, 카드 업계 등 다양한 분야에서<br>
+                                <p class="p">6년간 판촉물, 프랜차이즈, 카드 업계 등 다양한 분야에서<br>
                                     편집디자이너로 일하며 폭넓은 경험을 쌓아왔습니다.<br>
                                     다양한 소재와 형식의 인쇄물을 다루며 실무 감각을 키웠고,<br>
                                     그래픽 디자인에 대한 깊이 있는 이해를 바탕으로 효과적인<br>
@@ -103,36 +122,62 @@
                     <h2 class="h1">Tech Stack</h2>
                     <p class="p">업무 경험을 통해 익숙하게 다룬 디자인 툴과<br>퍼블리싱 과정에서 학습한 기술들을 소개합니다.</p>
                 </span>
-                    <div class="stackp">
-                        <div class="left">
-                            <h3 id="design" class="h3">DESIGN</h3>
-                            <p id="designparagraph">편집 디자이너로 근무하며 Photoshop, Illustrator, InDesign 등 다양한<br>디자인 툴을 능숙하게 다뤄왔습니다. 인쇄물부터 브랜드 디자인까지 폭넓은<br>경험을 바탕으로, 목적에 맞는 비주얼을 효과적으로 제작할 수 있습니다.<br>또한, 사내 홈페이지 디자인 및 브랜드 아이덴티티 구축 경험을 통해 사용자<br>중심의 시각적 커뮤니케이션을 구현할 수 있습니다. 이후 Figma를 추가로<br>학습하여, 웹 및 UI 디자인 작업까지 확장해 나가고 있습니다.</p>
-                            <h3 id="publishing" class="h3">PUBLISING</h3>
-                            <p id="publishinggp">웹 퍼블리싱 과정에서 HTML, CSS, JavaScript, jQuery, SASS를 활용한<br>마크업과 개발을 익히며, 웹 접근성과 반응형 디자인을 고려한 코드 작업이<br>가능합니다.<br>또한, React.js에 대한 기초적인 이해를 바탕으로 동적인 UI 구현이 가능하며,<br>웹 최적화와 사용자 경험 향상을 위해 지속적으로 학습하고 있습니다.</p>
-                        </div>
-                        <div class="right">
-                            <ul class="l_icon">
-                                <li class="score_5"><p class="xxs"><span>PHOTOSHOP</span></p></li>
-                                <li class="score_5"><p class="xxs"><span>ILLUSTRATION</span></p></li>
-                                <li class="score_3"><p class="xxs"><span>IN DESIGN</span></p></li>
-                                <li class="score_4"><p class="xxs"><span>FIGMA</span></p></li>
-                                <li class="score_3"><p class="xxs"><span>SASS</span></p></li>
-                            </ul>
-                            <ul class="r_icon">
-                                <li class="score_4"><p class="xxs"><span>HTML</span></p></li>
-                                <li class="score_4"><p class="xxs"><span>CSS</span></p></li>
-                                <li class="score_3"><p class="xxs"><span>JAVASCRIPT</span></p></li>
-                                <li class="score_3"><p class="xxs"><span>JQUERY</span></p></li>
-                                <li class="score_2"><p class="xxs"><span>REACT</span></p></li>
-                            </ul>
-                        </div>
+                <div class="stackp">
+                    <div class="left">
+                        <h3 id="design" class="h3">DESIGN</h3>
+                        <p id="designparagraph">편집 디자이너로 근무하며 Photoshop, Illustrator, InDesign 등 다양한<br>디자인 툴을 능숙하게
+                            다뤄왔습니다. 인쇄물부터 브랜드 디자인까지 폭넓은<br>경험을 바탕으로, 목적에 맞는 비주얼을 효과적으로 제작할 수 있습니다.<br>또한, 사내 홈페이지 디자인 및
+                            브랜드 아이덴티티 구축 경험을 통해 사용자<br>중심의 시각적 커뮤니케이션을 구현할 수 있습니다. 이후 Figma를 추가로<br>학습하여, 웹 및 UI 디자인
+                            작업까지 확장해 나가고 있습니다.</p>
+                        <h3 id="publishing" class="h3">PUBLISING</h3>
+                        <p id="publishinggp">웹 퍼블리싱 과정에서 HTML, CSS, JavaScript, jQuery, SASS를 활용한<br>마크업과 개발을 익히며, 웹
+                            접근성과 반응형 디자인을 고려한 코드 작업이<br>가능합니다.<br>또한, React.js에 대한 기초적인 이해를 바탕으로 동적인 UI 구현이 가능하며,<br>웹
+                            최적화와 사용자 경험 향상을 위해 지속적으로 학습하고 있습니다.</p>
+                    </div>
+                    <div class="right">
+                        <ul class="l_icon">
+                            <li class="score_5">
+                                <p class="xxs"><span>PHOTOSHOP</span></p>
+                            </li>
+                            <li class="score_5">
+                                <p class="xxs"><span>ILLUSTRATION</span></p>
+                            </li>
+                            <li class="score_3">
+                                <p class="xxs"><span>IN DESIGN</span></p>
+                            </li>
+                            <li class="score_4">
+                                <p class="xxs"><span>FIGMA</span></p>
+                            </li>
+                            <li class="score_3">
+                                <p class="xxs"><span>SASS</span></p>
+                            </li>
+                        </ul>
+                        <ul class="r_icon">
+                            <li class="score_4">
+                                <p class="xxs"><span>HTML</span></p>
+                            </li>
+                            <li class="score_4">
+                                <p class="xxs"><span>CSS</span></p>
+                            </li>
+                            <li class="score_3">
+                                <p class="xxs"><span>JAVASCRIPT</span></p>
+                            </li>
+                            <li class="score_3">
+                                <p class="xxs"><span>JQUERY</span></p>
+                            </li>
+                            <li class="score_2">
+                                <p class="xxs"><span>REACT</span></p>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
         <section id="portfolio">
             <div class="wrap flex-column-center">
-                <h2 class="typo">PORTFOLIO</h2>
-                <ul class="white gallery">
+                <h2 data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000" class="typo">PORTFOLIO</h2>
+                <ul data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000" data-aos-delay="1000"
+                    class="white gallery">
                     <li>
                         <h3 class="h6">포트폴리오 1</h3>
                         <span>
@@ -244,72 +289,89 @@
             <div class="wrap flex">
                 <div class="happy_top">
                     <h2 class="h1">My Happy List</h2>
-                    <p class="p" ></p>
+                    <p class="p"></p>
                     나만의 즐거움을 찾고, 몰입하며, 새로운 경험을 쌓아가는 시간들.<br>
                     소소한 행복이 모여 나를 채우는 순간들을 담았습니다.
-                </p>
+                    </p>
                 </div>
                 <div class="happylist">
                     <ul>
                         <li>
                             <a class="block" href="#">
                                 <h3 class="h3">Gaming<span class="block"></span>Time</h3>
-                                <p class="p" >
-                                    나만의 속도로 도전하고,<br>
-                                    깊이 몰입하는 시간.<br>
-                                    게임은 온전히 나에게<br>
-                                    집중할 수 있는 가장<br>
-                                    완벽한 즐거움입니다.</p>
+                                <p class="p">
+                                    나만의 속도로 도전하고, 깊이 몰입하는 시간.<br>
+                                    게임은 온전히 나에게 집중할 수 있는 가장 완벽한 즐거움입니다.
+                                </p>
+                                <div class="tags">
+                                    <span>DeepFocus</span>
+                                    <span>ImmersiveJoy</span>
+                                    <span>MyOwnPace</span>
+                                </div>
                             </a>
                         </li>
+
                         <li>
                             <a class="block" href="#">
                                 <h3 class="h3">Meaningful<span class="block"></span>Conversation</h3>
-                                <p class="p" >
-                                    가볍지 않은 대화 속에서 더<br>
-                                    깊이 생각하고, 새로운 시각을<br>
-                                    발견하는 순간을 좋아합니다.<br>
-                                    감정을 나누고 다양한 주제에<br>
-                                    대해 깊이 있는 이야기를<br>
-                                    나누는 것이 큰 즐거움입니다.
+                                <p class="p">
+                                    가볍지 않은 대화 속에서 더 깊이 생각하고, 새로운 시각을 발견하는 순간을 좋아합니다.<br>
+                                    감정을 나누고 다양한 주제에 대해 깊이 있는 이야기를 나누는 것이 큰 즐거움입니다.
                                 </p>
+                                <div class="tags">
+                                    <span>ThoughtfulTalks</span>
+                                    <span>SharedEmotions</span>
+                                    <span>NewPerspectives</span>
+                                </div>
                             </a>
                         </li>
+
                         <li>
                             <a class="block" href="#">
                                 <h3 class="h3">Escape<span class="block"></span>Room</h3>
-                                <p class="p" >
-                                    제한된 시간 안에 단서를 찾고<br>
-                                    퍼즐을 푸는 짜릿한 두뇌 게임!<br>
-                                    논리와 팀워크가 어우러진<br>
-                                    방탈출은 몰입감과 성취감을<br>
+                                <p class="p">
+                                    제한된 시간 안에 단서를 찾고 퍼즐을 푸는 짜릿한 두뇌 게임!<br>
+                                    논리와 팀워크가 어우러진 방탈출은 몰입감과 성취감을<br>
                                     선사하는 최고의 즐거움입니다.
                                 </p>
+                                <div class="tags">
+                                    <span>PuzzleThrill</span>
+                                    <span>LogicAndTeamwork</span>
+                                    <span>ImmersiveChallenge</span>
+                                </div>
                             </a>
                         </li>
+
                         <li>
                             <a class="block" href="#">
                                 <h3 class="h3">Food<span class="block"></span>Hunting</h3>
-                                <p class="p" >
-                                    새로운 맛을 찾는 것은 작은<br>
-                                    여행과 같습니다. 다양한<br>
-                                    음식의 풍미를 즐기며,<br>
-                                    특별한 순간을 만끽합니다.
+                                <p class="p">
+                                    새로운 맛을 찾는 것은 작은 여행과 같습니다.<br>
+                                    다양한 음식의 풍미를 즐기며, 특별한 순간을 만끽합니다.
                                 </p>
+                                <div class="tags">
+                                    <span>TasteAdventure</span>
+                                    <span>FlavorsOfLife</span>
+                                    <span>EveryBiteAMemory</span>
+                                </div>
                             </a>
                         </li>
+
                         <li>
                             <a class="block" href="#">
                                 <h3 class="h3">Show<span class="block"></span>Going</h3>
-                                <p class="p" >
-                                    웅장한 오케스트라의 선율과<br>
-                                    뮤지컬의 생동감 넘치는<br>
-                                    퍼포먼스를 즐기며, 공연이<br>
-                                    주는 몰입과 감동을 소중히<br>
-                                    여깁니다.
+                                <p class="p">
+                                    웅장한 오케스트라의 선율과 뮤지컬의 생동감 넘치는<br>
+                                    퍼포먼스를 즐기며, 공연이 주는 몰입과 감동을 소중히 여깁니다.
                                 </p>
+                                <div class="tags">
+                                    <span>LivePerformanceMagic</span>
+                                    <span>EmotionalImmersion</span>
+                                    <span>ArtOnStage</span>
+                                </div>
                             </a>
                         </li>
+
                     </ul>
                 </div>
             </div>
@@ -357,14 +419,25 @@
         </section>
     </main>
     <!-- 하단영역 -->
-    <script src="js/jquery-3.7.1.js"></script>
-    <script>
-        $(document).ready(function(){
-//포트폴리오 갤러리 ------------------------------------------------------------
-            
 
-//end ------------------------------------------------------------------------
+    <!-- jquery -->
+    <script src="js/jquery-3.7.1.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            //포트폴리오 갤러리 ------------------------------------------------------------
+
+
+            //end ------------------------------------------------------------------------
+        });
+    </script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        $(document).ready(function () {
+            AOS.init();
         });
     </script>
 </body>
+
 </html>

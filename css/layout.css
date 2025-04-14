@@ -70,10 +70,11 @@ body #title{
 }
 
 #title div.wrap h2.name {
-  font-size: 130px;
+  font-size: 110px;
   color: white;
   font-weight: 900;
   font-family: 'Paperlogy-8ExtraBold';
+  transform: translateY(-50px);
 }
 
 #title div.wrap p {

@@ -1,0 +1,156 @@
+/* 타이틀 텍스트 애니 */
+
+.content {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, 60px);
+  height: 153px;
+  overflow: hidden;
+  font-size: 110px;
+  color: white;
+}
+
+.content__container {
+  font-weight: 600;
+  overflow: hidden;
+  /*! height: 153px !important; */
+  /*! padding: 0 40px; */
+}
+
+.content__container__text {
+  display: inline;
+  float: left;
+  margin: 0;
+}
+
+.content__container__list__item {
+  line-height: 155px;
+  margin: 0;
+  /*! padding: 20px 0; */
+  width: 100%;
+  white-space: nowrap;
+}
+
+.content__container__list {
+  margin-top: 0;
+  text-align: left;
+  list-style: none;
+  animation-name: change;
+  animation-duration: 8s;
+  /* 전체 지속시간 (필요에 따라 조절) */
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  /* 전체 움직임을 선형으로 */
+}
+
+/* Standard Keyframes */
+@keyframes change {
+
+  /* 첫 번째 아이템 고정 (0% ~ 12.5%) */
+  0%,
+  12.5% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  /* 12.5% ~ 25%: 첫 번째 → 두 번째 아이템 전환 */
+  12.5%,
+  25% {
+    transform: translate3d(0, -150px, 0);
+  }
+
+  /* 두 번째 아이템 고정 (25% ~ 37.5%) */
+  25%,
+  37.5% {
+    transform: translate3d(0, -150px, 0);
+  }
+
+  /* 37.5% ~ 50%: 두 번째 → 세 번째 아이템 전환 */
+  37.5%,
+  50% {
+    transform: translate3d(0, -300px, 0);
+  }
+
+  /* 세 번째 아이템 고정 (50% ~ 62.5%) */
+  50%,
+  62.5% {
+    transform: translate3d(0, -300px, 0);
+  }
+
+  /* 62.5% ~ 75%: 세 번째 → 네 번째 아이템 전환 */
+  62.5%,
+  75% {
+    transform: translate3d(0, -450px, 0);
+  }
+
+  /* 네 번째 아이템 고정 (75% ~ 87.5%) */
+  75%,
+  87.5% {
+    transform: translate3d(0, -450px, 0);
+  }
+
+  /* 87.5% ~ 100%: 네 번째 → 복제된 첫 번째 아이템 전환 */
+  87.5%,
+  100% {
+    transform: translate3d(0, -600px, 0);
+  }
+}
+
+
+
+
+
+/* Standard */
+@keyframes opacity {
+
+  0%,
+  100% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes change {
+
+  0%,
+  12.5% {
+    -webkit-transform: translate3d(0, 0, 0);
+  }
+
+  12.5%,
+  25% {
+    -webkit-transform: translate3d(0, -150px, 0);
+  }
+
+  25%,
+  37.5% {
+    -webkit-transform: translate3d(0, -150px, 0);
+  }
+
+  37.5%,
+  50% {
+    -webkit-transform: translate3d(0, -300px, 0);
+  }
+
+  50%,
+  62.5% {
+    -webkit-transform: translate3d(0, -300px, 0);
+  }
+
+  62.5%,
+  75% {
+    -webkit-transform: translate3d(0, -450px, 0);
+  }
+
+  75%,
+  87.5% {
+    -webkit-transform: translate3d(0, -450px, 0);
+  }
+
+  87.5%,
+  100% {
+    -webkit-transform: translate3d(0, -600px, 0);
+  }
+}
