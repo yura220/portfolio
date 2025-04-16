@@ -1,7 +1,11 @@
-#portfolio {height: 1100px;}
+#portfolio {
+  height: 1000px;
+}
 
 #portfolio .wrap {
   position: relative;
+  display: flex;
+  justify-content: center;
 }
 
 #portfolio h2 {
@@ -11,19 +15,28 @@
   top: 100px;
   font-family: 'Paperlogy-8ExtraBold';
   font-weight: 900;
+  top: 0;
+}
+
+.typo,
+.gallery {
+  position: relative;
+  will-change: transform, opacity;
 }
 
 .typo {
+  transform: translateY(-50px);
   opacity: 0;
-  transition: opacity 0.6s ease;
+
 }
 
-#portfolio ul {
+#portfolio ul.gallery {
   display: grid;
   grid-template-columns: repeat(4, 350px);
   grid-template-rows: repeat(4, 210px);
   gap: 13px;
-  margin-top: 200px;
+  padding-top: 300px;
+  opacity: 0;
 }
 
 #portfolio ul li {
@@ -176,6 +189,6 @@
 }
 
 #portfolio ul li:hover a.poimg {
-  background-color: rgba(0, 0, 0, .3);
+  background-color: rgba(0, 0, 0, .5);
   transition: .5s;
 }

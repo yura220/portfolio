@@ -21,21 +21,19 @@
     <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script>
+        // 로고 스플래쉬 -------------------------------------------------------
         window.addEventListener("load", function () {
             console.log("Window loaded");
             setTimeout(function () {
                 var splash = document.getElementById("splash");
                 if (!splash) {
-                    console.error("splash 요소가 없음");
                     return;
                 }
-                console.log("Before fade out, splash opacity:", splash.style.opacity);
                 splash.style.opacity = 0;
                 setTimeout(function () {
                     splash.style.display = "none";
-                    console.log("Splash display is now set to none");
                 }, 1000);
-            }, 1500);
+            }, 2500);
         });
     </script>
 </head>
@@ -43,7 +41,7 @@
 <body>
     <!-- 스플래시 화면: 전체 화면 덮음 -->
     <div id="splash">
-        <div class="zoom" data-aos="zoom-in" data-aos-duration="1000">
+        <div class="zoom" data-aos="zoom-in" data-aos-duration="1500">
             <svg width="300" height="300" viewBox="0 0 300 300">
                 <defs>
                     <clipPath id="logo-clip">
@@ -67,7 +65,7 @@
                     </clipPath>
                 </defs>
                 <!-- 클립패스가 적용된 GIF 이미지 -->
-                <image href="img/nature-4117.gif" width="100%" height="100%" clip-path="url(#logo-clip)"
+                <image href="img/bg2.gif" width="100%" height="100%" clip-path="url(#logo-clip)"
                     preserveAspectRatio="xMidYMid slice" />
             </svg>
         </div>
@@ -79,9 +77,9 @@
         <nav>
             <h1><a href="#">YURA</a></h1>
             <ul>
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#">PORTFOLIO</a></li>
-                <li><a href="#">CONTACT</a></li>
+                <li><a href="#" class="go_about">ABOUT</a></li>
+                <li><a href="#" class="go_portfolio">PORTFOLIO</a></li>
+                <li><a href="#" class="go_contact">CONTACT</a></li>
             </ul>
         </nav>
     </header>
@@ -231,10 +229,9 @@
             </div>
         </section>
         <section id="portfolio">
-            <div class="wrap flex-column-center">
-                <h2 data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500" class="typo">PORTFOLIO</h2>
-                <ul data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500" data-aos-delay="800"
-                    class="white gallery">
+            <div class="wrap">
+                <h2 class="typo">PORTFOLIO</h2>
+                <ul class="white gallery">
                     <li>
                         <h3 class="h6">포트폴리오 1</h3>
                         <span>
@@ -503,53 +500,122 @@
     <!-- AOS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
+
         $(document).ready(function () {
             AOS.init();
         });
     </script>
     <script>
-        $(document).ready(function () {
-            //many 스크롤 이벤트 ---------------------------------------------------------
-            gsap.registerPlugin(ScrollTrigger);
+        document.addEventListener("DOMContentLoaded", () => {
+            gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
-            // 섹션 자체를 핀 처리하여 잠시 멈추게 함
-            ScrollTrigger.create({
-                trigger: "#many",
-                start: "top top",        // 섹션의 상단이 뷰포트 상단에 도달하면 시작
-                end: "+=3230",
-                pin: true,               // 섹션 핀 처리
-                scrub: true,             // 스크롤과 애니메이션을 자연스럽게 연동
+            document.querySelector(".go_about").addEventListener("click", function (e) {
+                e.preventDefault();
+                gsap.to(window, {
+                    duration: 1.2,
+                    scrollTo: "#many",
+                    ease: "power2.out"
+                });
+            });
+            document.querySelector(".go_portfolio").addEventListener("click", function (e) {
+                e.preventDefault();
+                gsap.to(window, {
+                    duration: 1.2,
+                    scrollTo: "#portfolio",
+                    ease: "power2.out"
+                });
+            });
+            document.querySelector(".go_contact").addEventListener("click", function (e) {
+                e.preventDefault();
+                gsap.to(window, {
+                    duration: 1.2,
+                    scrollTo: "#contact",
+                    ease: "power2.out"
+                });
             });
 
-            // 내부 콘텐츠를 스크롤 애니메이션 처리 (예를 들어 위로 이동)
+            gsap.registerPlugin(ScrollTrigger);
+            // many 스크롤 -------------------------------------------------------------
+            // many 핀
+            ScrollTrigger.create({
+                trigger: "#many",
+                start: "top top",
+                end: "+=3230",
+                pin: true,
+                scrub: true
+            });
+
+            // many 안의 내부 스크롤
             gsap.fromTo(".inner-scroll",
                 { y: 0 },
                 {
-                    y: -3230,
+                    y: -3250,
                     scrollTrigger: {
                         trigger: "#many",
                         start: "top top",
-                        end: "+=3230",
-                        scrub: true,
+                        end: "+=3250",
+                        scrub: true
                     }
                 }
             );
-            //헤드 색상 변경 -------------------------------------------------
-            var titleBottom = $('#title').offset().top + $('#title').outerHeight();
 
-            $(window).on('scroll', function () {
-                var scroll = $(window).scrollTop();
+            //포트폴리오 스크롤 --------------------------------------------------
 
-                // 스크롤 위치가 타이틀 섹션의 아래쪽을 지나면 클래스 변경
-                if (scroll > titleBottom) {
-                    $('header ul li a').addClass('changed');
-                    $('header h1 a').addClass('ch_img');
-                } else {
-                    $('header ul li a').removeClass('changed');
-                    $('header h1 a').removeClass('ch_img');
+            gsap.fromTo(".typo",
+                { y: 0, opacity: 0 },
+                {
+                    y: 100,
+                    opacity: 1,
+                    scrollTrigger: {
+                        trigger: "#portfolio",
+                        start: "top 90%",
+                        end: "bottom 60%",
+                        scrub: true,
+                        markers: false
+                    }
                 }
+            );
+
+            gsap.fromTo(".gallery",
+                { y: 0, opacity: 0 },
+                {
+                    y: -200,
+                    opacity: 1,
+                    scrollTrigger: {
+                        trigger: "#portfolio",
+                        start: "top 60%",
+                        end: "bottom 50%",
+                        scrub: true,
+                        markers: false
+                    }
+                }
+            );
+
+            $(document).ready(function () {
+                console.log(document.querySelector(".typo"));
+                console.log(document.querySelector(".gallery"));
+                //헤드 색상 변경 -------------------------------------------------
+                var titleBottom = $('#title').offset().top + $('#title').outerHeight();
+
+                $(window).on('scroll', function () {
+                    var scroll = $(window).scrollTop();
+
+                    // 스크롤 위치가 타이틀 섹션의 아래쪽을 지나면 클래스 변경
+                    if (scroll > titleBottom) {
+                        $('header ul li a').addClass('changed');
+                        $('header h1 a').addClass('ch_img');
+                    } else {
+                        $('header ul li a').removeClass('changed');
+                        $('header h1 a').removeClass('ch_img');
+                    }
+                });
+
+                //end ------------------------------------------------------------------------
             });
-            //end ------------------------------------------------------------------------
+            $(window).on('scroll', function () {
+                let scrollT = $(window).scrollTop();
+                console.log(`마이프로필 ${scrollT}`);
+            });
         });
     </script>
 </body>
