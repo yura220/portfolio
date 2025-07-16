@@ -11,8 +11,8 @@ const sendEmail = (e) => {
   e.preventDefault()
 
   emailjs.send('service_tk02r3q', 'template_zed0jjn', {
-    from_name: name.value,
-    from_email: email.value,
+    name: name.value,
+    email: email.value,
     message: message.value,
   }, 'Uvo8ZaAjfvJCz0D-G')
     .then(() => {
