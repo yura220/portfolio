@@ -1,0 +1,250 @@
+#contact {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 95vh;
+}
+
+#contact div.wrap {
+  align-items: baseline;
+  padding-top: 70px;
+  gap: 0;
+  box-sizing: border-box;
+}
+
+#contact div.grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto 850px;
+  grid-template-rows: auto 90px;
+  height: 75%;
+}
+
+#contact div.thank_left {
+  grid-column: 1;
+  grid-row: 1;
+  padding-top: 30px;
+}
+
+#contact h2.h1 {
+  padding-bottom: 20px;
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid;
+}
+
+#contact p.p {
+  padding-bottom: 20px;
+  line-height: 2.1;
+}
+
+#contact address {
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#contact address p {}
+
+#contact address p.num {}
+
+#contact address p.mail {}
+
+#contact address span {
+  font-weight: 400;
+}
+
+#contact address p.num span {
+  padding-left: 30px;
+}
+
+#contact address p.mail span {
+  padding-left: 16px;
+}
+
+#contact form {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  display: grid;
+  height: 100%;
+  grid-template-columns: 1fr;
+  grid-template-rows: 75px 75px 1fr 50px;
+  gap: 0;
+  padding-left: 20px;
+}
+
+#contact label {}
+
+#contact input {
+  height: 75px;
+  border: 0;
+  grid-row: 1;
+}
+
+#contact #email {
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  grid-row: 2;
+  box-sizing: border-box;
+}
+
+#contact textarea {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 20px 0;
+  height: 80%;
+  border: 0;
+  border-bottom: 1px solid;
+  grid-row: 3;
+  resize: none;
+  overflow: auto;
+}
+
+#contact input:focus {
+  outline: none;
+}
+
+#contact input:focus::placeholder {
+  color: #A68A6D;
+}
+
+#contact textarea::placeholder {
+  font-family: 'Paperlogy-8ExtraBold';
+  font-size: 18px;
+  font-weight: 500;
+  height: 100%;
+}
+
+#contact textarea:focus {
+  outline: none;
+}
+
+#contact textarea:focus::placeholder {
+  color: #A68A6D;
+}
+
+#contact button.submit-button {
+  width: 100%;
+  height: 50px;
+  border: 0;
+  background-color: white;
+  color: white;
+  grid-row: 4;
+  cursor: pointer;
+}
+
+#contact div.social-links {
+  grid-column: 1;
+  grid-row: 2;
+  display: flex;
+  gap: 40px;
+  align-items: end;
+  padding-bottom: 20px;
+}
+
+#contact .social-links a {}
+#contact .social-links a:hover{color: #A68A6D;}
+
+/* 버튼 애니 */
+.custom-btn {
+  width: 830px;
+  height: 50px;
+  color: #fff;
+  padding: 10px 25px;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  position: relative;
+  display: inline-block;
+  box-shadow:
+    7px 7px 20px 0px rgba(0, 0, 0, .1),
+    4px 4px 5px 0px rgba(0, 0, 0, .1);
+  outline: none;
+}
+
+/* 3 */
+.btn-3 {
+  background: #272727;
+  background: linear-gradient(0deg, #272727 0%, #272727 100%);
+  width: 830px;
+  height: 50px;
+  line-height: 50px;
+  padding: 0;
+  border: none;
+
+}
+
+.btn-3 span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.btn-3:before,
+.btn-3:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 0;
+  background: #272727;
+  transition: all 0.5s ease;
+}
+
+.btn-3:before {
+  height: 0%;
+  width: 2px;
+}
+
+.btn-3:after {
+  width: 0%;
+  height: 2px;
+}
+
+.btn-3:hover {
+  background: transparent;
+  box-shadow: none;
+}
+
+.btn-3:hover:before {
+  height: 100%;
+}
+
+.btn-3:hover:after {
+  width: 100%;
+}
+
+.btn-3 span:hover {
+  color: #272727;
+}
+
+.btn-3 span:before,
+.btn-3 span:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  background: #272727;
+  transition: all 0.5s ease;
+}
+
+.btn-3 span:before {
+  width: 2px;
+  height: 0%;
+}
+
+.btn-3 span:after {
+  width: 0%;
+  height: 2px;
+}
+
+.btn-3 span:hover:before {
+  height: 100%;
+}
+
+.btn-3 span:hover:after {
+  width: 100%;
+}

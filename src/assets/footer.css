@@ -1,0 +1,15 @@
+#footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+
+#footer p {
+  text-align: center;
+  line-height: 1.6;
+}
+
+.footer--about {
+  background-color: #fffcee; /* 어바웃 페이지 전용 색상 */
+}

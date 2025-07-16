@@ -1,0 +1,97 @@
+:root {
+  font-family: "Noto Sans KR", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+    font-family: 'Paperlogy-8ExtraBold';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-8ExtraBold.woff2') format('woff2');
+    font-weight: 800;
+    font-style: normal;
+}
+body{
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+}
+/* 레이아웃 스타일링  */
+.wrap{
+  /* 세로 정렬 */
+max-width: 1440px;
+margin: 0 auto;
+  /* 좌우 간격 조정 */
+}
+.flex-column-center{
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 30px;
+justify-content: center;
+height: 100%;
+}
+.flex{
+  display: flex;
+}
+.block{
+  display: block;
+}
+/* 텍스트 스타일링 */
+.h1{
+  font-family: 'Paperlogy-8ExtraBold';
+  font-weight: 900;
+  font-size:55px;
+}
+.h2{
+  font-family: 'Paperlogy-8ExtraBold';
+  font-weight: 900;
+  font-size:45px;
+}
+.h3{
+  font-family: 'Paperlogy-8ExtraBold';
+  font-weight: 900;
+  font-size:40px;
+}
+.h4{
+  font-family: 'Paperlogy-8ExtraBold';
+  font-weight: 900;
+  font-size:25px;
+}
+.h5{
+  font-family: 'Paperlogy-8ExtraBold';
+  font-weight: 900;
+  font-size:20px;
+}
+.h6{
+  font-family: 'Paperlogy-8ExtraBold';
+  font-weight: 900;
+  font-size:18px;
+  font-weight: 500;
+}
+.p{
+  font-size:16px;
+  line-height: 1.6;
+}
+.xs{
+font-size:12px;
+}
+.xxs{
+font-size:10px !important;
+}
+
+/* 컬러 */
+.white{
+color:white;
+}
+
+.brown{
+  color: #291E0C;
+}
+
+.light-brown{
+  color: #A68A6D;
+}
+
+.changed {
+  color: #A68A6D;
+}

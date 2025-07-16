@@ -1,0 +1,106 @@
+#detail {
+  height: 91.6vh;
+}
+
+#detail .wrap {}
+
+#detail h2 {
+  margin-top: 90px;
+  font-size: 36px;
+  font-weight: 700;
+  color: #291E0C;
+}
+
+#detail .flex {
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+#detail .d-left {
+  width: 63%;
+  height: 500px;
+}
+
+#detail .d-left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#detail .d-right {
+  display: flex;
+  flex-direction: column;
+  width: 36.4%;
+  height: 500px;
+  justify-content: space-between;
+}
+
+#detail .d-top {
+  width: 100%;
+  height: 49.3%;
+}
+
+#detail .d-top img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#detail .d-bootom {
+    height: 100%;
+    height: 49.3%;
+}
+
+#detail .d-bootom img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#detail .desc {
+  margin-top: 30px;
+}
+
+#detail .skill {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+#detail .skill h3 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+#detail .tool {
+  font-size: 14px;
+  color: #515151;
+}
+
+#detail .explanation {
+  padding-left: 2px;
+  margin-top: 10px;
+}
+
+.back {
+  position: fixed;
+  bottom: 210px;
+  right: 236px;
+  background-color: #333;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  z-index: 1000;
+  transition: background-color 0.3s;
+}
+
+.back:hover {
+  background-color: #555;
+}
+
+.explanation {
+  white-space: pre-line;
+  line-height: 1.6;
+}

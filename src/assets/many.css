@@ -1,0 +1,194 @@
+/* Many 섹션 */
+#many {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.many-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.many-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-repeat: no-repeat;
+}
+
+#many .box {
+  position: relative;
+  display: block;
+  width: 642px;
+  height: 100vh;
+}
+
+#many .flex-column-center {
+  /*! max-width: 100%; */
+  width: 100%;
+  display: flex;
+  /*! grid-template-columns: 1fr 642px; */
+  padding: 80px calc((100% - 1440px - 17px) / 2) 80px 0;
+  box-sizing: border-box;
+  justify-content: space-between;
+  flex-direction: inherit;
+}
+
+/* 좌측 Article */
+.inner-scroll {
+  will-change: transform;
+}
+
+#many article {
+  color: white;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  grid-column: 1;
+}
+
+#many article h2 {
+  font-size: 125px;
+  color: white;
+  line-height: 1;
+  z-index: 1;
+  font-weight: 900;
+  font-family: 'Paperlogy-8ExtraBold';
+  box-sizing: border-box;
+  padding-left: 23.5%;
+  width: 1000px;
+}
+
+#many article p span {
+
+  display: flex;
+  width: 600px;
+  height: 100px;
+  align-items: center;
+}
+
+#many article p {
+  font-size: 14px;
+  color: white;
+  z-index: 2;
+  margin-top: 10px;
+  padding-left: 23.5%;
+  position: relative;
+}
+
+#many article p::after {
+  content: "";
+  background-color: rgba(39, 24, 6, 0.6);
+  position: absolute;
+  z-index: -1;
+  width: 870px;
+  height: 100px;
+  left: 0;
+  top: 0;
+}
+
+/* 좌우 컨테이너 */
+.left-section,
+.right-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 좌측 box (왼쪽 정렬) */
+.left-section {
+  width: auto !important;
+  opacity: 1 !important;
+}
+
+/* 우측 box (오른쪽 정렬) */
+.right-section {
+  grid-column: 2;
+}
+
+/* Box 내부 리스트 */
+#many .box ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#many .box ul li {
+  border-radius: 20px;
+  width: 642px;
+  height: 642px;
+  text-align: center;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin: 40px 0;
+  position: relative;
+}
+
+#many .box ul li::before{
+  content: "";
+  background-color: #F6EAD9;
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0.9;
+  display: block;
+  top: 0;
+  z-index: -1;
+}
+
+
+#many .box ul .inner-box::after{
+  content: "";
+  display: block;
+  height: 180px;
+  width: 180px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#many .box ul li:nth-child(1) .inner-box::after{
+  background-image: url(../img/icon1.png)
+}
+#many .box ul li:nth-child(2) .inner-box::after{
+  background-image: url(../img/icon2.png)
+}
+#many .box ul li:nth-child(3) .inner-box::after{
+  background-image: url(../img/icon3.png)
+}
+#many .box ul li:nth-child(4) .inner-box::after{
+  background-image: url(../img/icon4.png)
+}
+#many .box ul li:nth-child(5) .inner-box::after{
+  background-image: url(../img/icon5.png)
+}
+
+#many .box ul li .inner-box {
+  width: 100%;
+  height: 100%;
+  padding: 80px 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* 리스트 내부 타이틀 스타일 */
+#many .box ul li h3 {
+  color: #291e0c;
+  font-size: 29px;
+  font-weight: 800;
+}
+
+#many .box ul li p{
+  font-weight: 500;
+}

@@ -1,0 +1,200 @@
+/* Stack 섹션 */
+#stack{
+  background-color: #fffcee;
+  min-height: 700px;
+  height: 100vh;
+}
+
+#stack div.wrap {
+  color: #291E0C;
+  width: 1440px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  gap: 40px;
+  height: 100%;
+}
+
+#stack div.wrap>span {
+  display: flex;
+  gap: 20px;
+  border-bottom: 1px solid;
+  align-items: end;
+  width: 1440px;
+  padding-bottom: 16px;
+  align-self: end;
+}
+
+#stack div.wrap>span h2 {}
+
+#stack div.stackp {
+  display: grid;
+  grid-template-columns: 506px auto;
+  grid-template-rows: auto;
+  align-self: baseline;
+}
+
+#stack div.left {
+  grid-column: 1;
+  grid-row: 1;
+  /*! z-index: 1; */
+  flex-direction: column;
+  align-items: baseline;
+  gap: 20px;
+}
+
+#stack div.left h3 {
+  color: #A68A6D;
+  margin-bottom: 20px;
+}
+
+#stack div.left h3#design {}
+
+#stack div.left h3#publishing {
+  padding-top: 50px;
+}
+
+#stack div.left p {
+  line-height: 1.6;
+}
+
+#stack div.left p#designparagraph {}
+
+#stack div.left p#publishinggp::after {
+  content: "";
+  display: block;
+  width: 506px;
+  height: 1px;
+  background-color: #000;
+  margin-top: 50px;
+}
+
+#stack div.right {
+  grid-column: 2;
+  grid-row: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#stack div.right ul {}
+
+#stack div.right ul.l_icon {
+
+  grid-column: 1;
+}
+
+#stack div.right ul.r_icon {
+  grid-column: 2;
+}
+
+#stack div.right ul li {
+
+  padding: 17px 0;
+}
+
+#stack div.right ul li p {
+  display: grid;
+  grid-template-columns: 200px auto;
+  grid-template-rows: auto auto;
+}
+
+#stack div.right ul li p::before {
+  content: "";
+  display: block;
+  width: 45px;
+  height: 45px;
+  border: 4px solid #000;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  grid-column: 1;
+  grid-row: 1;
+  justify-self: center;
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#stack div.right ul.l_icon li:nth-child(1) p::before {
+  background-image: url(../img/svg/photoshop.svg)
+}
+
+#stack div.right ul.l_icon li:nth-child(2) p::before {
+  background-image: url(../img/svg/illustration.svg)
+}
+
+#stack div.right ul.l_icon li:nth-child(3) p::before {
+  background-image: url(../img/svg/in_design.svg);
+}
+
+#stack div.right ul.l_icon li:nth-child(4) p::before {
+  background-image: url(../img/svg/figma.svg);
+  background-size: 50%;
+}
+
+#stack div.right ul.l_icon li:nth-child(5) p::before {
+  background-image: url(../img/svg/sass.svg);
+  background-size: 60%;
+}
+
+#stack div.right ul.r_icon li:nth-child(1) p::before {
+  background-image: url(../img/svg/html.svg)
+}
+
+#stack div.right ul.r_icon li:nth-child(2) p::before {
+  background-image: url(../img/svg/css.svg)
+}
+
+#stack div.right ul.r_icon li:nth-child(3) p::before {
+  background-image: url(../img/svg/javascript.svg)
+}
+
+#stack div.right ul.r_icon li:nth-child(4) p::before {
+  background-image: url(../img/svg/Jquery.svg)
+}
+
+#stack div.right ul.r_icon li:nth-child(5) p::before {
+  background-image: url(../img/svg/react.svg);
+  background-size: 80%;
+}
+
+#stack div.right ul li p::after {
+  display: block;
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  align-self: center;
+  font-size: 18px;
+  transform: translateY(-10px);
+  color: rgba(0, 0, 0, .8);
+}
+
+#stack div.right ul li p span {
+  grid-column: 1;
+  grid-row: 2;
+  justify-self: center;
+}
+
+/* 점수별 도트 설정 */
+#stack li.score_5 p::after {
+  content: "● ● ● ● ●";
+  letter-spacing: .8em;
+}
+
+#stack li.score_4 p::after {
+  content: "● ● ● ● ○";
+  letter-spacing: .8em;
+}
+
+#stack li.score_3 p::after {
+  content: "● ● ● ○ ○";
+  letter-spacing: .8em;
+}
+
+#stack li.score_2 p::after {
+  content: "● ● ○ ○ ○";
+  letter-spacing: .8em;
+}
+
+#stack li.score_1 p::after {
+  content: "● ○ ○ ○ ○";
+  letter-spacing: .8em;
+}
