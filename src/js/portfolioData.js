@@ -7,7 +7,7 @@ export default [
     thumbnail: '/img/pf1.png',
     imageTop: '/img/pf1-1.png',
     imageBottom: '/img/pf1-2.png',
-    tool: 'React, css',
+    tool: 'React, Router, CSS, JS',
     explanation: 'React 기반의 SPA 구조로 라우터를 구성하고, 각 상세 페이지 간의 동적 이동을 구현했습니다.\n사용자 상호작용을 위한 좋아요 및 댓글 기능은 MongoDB와 Express 서버를 통해 구축했으며,\n클라이언트에서의 실시간 반영과 서버 데이터 연동에 중점을 두어 개발했습니다.'
   },
   {

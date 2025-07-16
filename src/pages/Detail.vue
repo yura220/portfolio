@@ -42,7 +42,7 @@ function goBack() {
       </div>
       <div class="desc">
         <span class="skill">
-          <h3>Tool</h3>
+          <h3>SKILL</h3>
           <p class="tool">{{ selected.tool }}</p>
         </span>
         <p class="explanation">{{ selected.explanation }}</p>

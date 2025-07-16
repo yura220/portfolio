@@ -1,5 +1,31 @@
 <script setup>
 import '../assets/contact.css'
+import { ref } from 'vue'
+import emailjs from 'emailjs-com'
+
+const name = ref('')
+const email = ref('')
+const message = ref('')
+
+const sendEmail = (e) => {
+  e.preventDefault()
+
+  emailjs.send('service_tk02r3q', 'template_zed0jjn', {
+    from_name: name.value,
+    from_email: email.value,
+    message: message.value,
+  }, 'Uvo8ZaAjfvJCz0D-G')
+    .then(() => {
+      alert("메일이 성공적으로 전송되었습니다.")
+      name.value = ''
+      email.value = ''
+      message.value = ''
+    })
+    .catch((error) => {
+      console.error("메일 전송 실패:", error)
+      alert("메일 전송 중 오류가 발생했습니다.")
+    })
+}
 </script>
 
 <template>
@@ -23,10 +49,10 @@ import '../assets/contact.css'
                     <p class="mail">Email<span>ruddbfk7@gmail.com</span></p>
                 </address>
             </div>
-            <form>
-                <input id="name" class="h6" type="text" placeholder="NAME">
-                <input id="email" class="h6" type="email" placeholder="Email">
-                <textarea id="message" placeholder="Your message"></textarea>
+            <form @submit="sendEmail">
+                <input v-model="name" class="h6" type="text" placeholder="NAME" required>
+                <input v-model="email" class="h6 email" type="email" placeholder="Email" required>
+                <textarea v-model="message" placeholder="Your message" required></textarea>
                 <button type="submit" class="submit-button custom-btn btn-3"><span>SUBMIT</span></button>
             </form>
             <div class="social-links">
