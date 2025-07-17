@@ -16,7 +16,7 @@ onMounted(() => {
   <section id="about">
     <div class="wrap">
       <div class="img_box">
-        <img src="/img/danny-greenberg-YsAdTFpWtKY-unsplash.jpg" alt="">
+        <img src="/img/photo.jpg" alt="">
       </div>
       <div class="right">
         <ul class="greetings">

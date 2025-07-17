@@ -56,7 +56,7 @@ const sendEmail = (e) => {
                 <button type="submit" class="submit-button custom-btn btn-3"><span>SUBMIT</span></button>
             </form>
             <div class="social-links">
-                <a href="#" target="_blank">GitHub</a>
+                <a href="https://github.com/yura220" target="_blank">GitHub</a>
                 <a href="#" target="_blank">LinkedIn</a>
                 <a href="#" target="_blank">Instagram</a>
                 <a href="#" target="_blank">Resume</a>

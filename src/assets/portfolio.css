@@ -1,6 +1,5 @@
 #portfolio {
-  min-height: 1000px;
-  /* height: 100vh; */
+  min-height: 900px;
   position: relative;
   background-color: #fffcee;
 }
@@ -43,12 +42,12 @@
 }
 
 #portfolio ul.gallery {
-  transform: translateY(100px); /* 초깃값 일치 */
+  display: grid;
+  transform: translateY(100px);
   gap: 13px;
-  /* padding-top: 300px; */
   display: grid;
   grid-template-columns: repeat(4, 350px);
-  grid-template-rows: repeat(4, 210px);
+  grid-template-rows: repeat(3, 210px);
   opacity: 0;
 }
 
