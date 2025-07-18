@@ -4,7 +4,7 @@ import '../assets/title.css'
 </script>
 
 <template>
-  <div id="title">
+  <section id="title">
     <div class="wrap flex-column-center">
       <div>
         <h2 class="name">I'M YURA, AND I<br />
@@ -25,6 +25,6 @@ import '../assets/title.css'
     <video autoplay loop muted>
       <source src="https://cdn.pixabay.com/video/2023/03/01/152740-803732906_large.mp4" type="video/mp4" />
     </video>
-  </div>
+  </section>
 </template>
 

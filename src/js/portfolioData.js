@@ -83,7 +83,7 @@ export default [
   {
     id: 9,
     title: '미니블로그',
-    visitUrl: 'https://mini-blog-swart.vercel.app',
+    visitUrl: 'https://mini-blog-three-sigma.vercel.app',
     thumbnail: '/img/pf9.png',
     imageTop: '/img/pf9-1.png',
     imageBottom: '/img/pf9-2.png',

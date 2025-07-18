@@ -58,7 +58,7 @@ const sendEmail = (e) => {
             <div class="social-links">
                 <a href="https://github.com/yura220" target="_blank">GitHub</a>
                 <a href="#" target="_blank">LinkedIn</a>
-                <a href="#" target="_blank">Instagram</a>
+                <a href="#" target="_blank">Figma</a>
                 <a href="#" target="_blank">Resume</a>
             </div>
         </div>
