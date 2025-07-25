@@ -73,7 +73,7 @@ export default [
   {
     id: 8,
     title: 'todo리스트',
-    visitUrl: 'https:vuetodolist-blue.vercel.app',
+    visitUrl: 'https://vuetodolist-blue.vercel.app/',
     thumbnail: '/img/pf8.png',
     imageTop: '/img/pf8-1.png',
     imageBottom: '/img/pf8-2.png',
