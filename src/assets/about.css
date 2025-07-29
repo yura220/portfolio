@@ -54,11 +54,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px 0;
+  padding: 10px 0;
   border-radius: 20px;
   color: white;
   font-weight: 600;
   line-height: 1.7;
+  margin-bottom: 15px;
 }
 
 #about .greetings > li > p{
@@ -117,4 +118,11 @@
 #about .personal_history .small{
   font-size: 12px;
   color: #515151;
+}
+
+#about .bold{
+  font-weight: 800 !important;
+  background-color: transparent !important;
+  color: #000 !important;
+  display: inline-block !important;
 }

@@ -13,7 +13,7 @@ export default [
   {
     id: 2,
     title: '해커톤',
-    visitUrl: 'hackathon-gules-nine.vercel.app',
+    visitUrl: 'https://hackathon-gules-nine.vercel.app/',
     thumbnail: '/img/pf2.jpg',
     imageTop: '/img/pf2-1.jpg',
     imageBottom: '/img/pf2-2.jpg',
