@@ -104,3 +104,19 @@
   white-space: pre-line;
   line-height: 1.6;
 }
+
+.figma-button{}
+
+.figma-button a{
+  bottom: 210px;
+  right: 336px;
+  background-color: #333;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  z-index: 1000;
+  transition: background-color 0.3s;
+  position: absolute;
+}

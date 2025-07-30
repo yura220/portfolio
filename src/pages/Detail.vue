@@ -46,6 +46,13 @@ function goBack() {
           <p class="tool">{{ selected.tool }}</p>
         </span>
         <p class="explanation">{{ selected.explanation }}</p>
+        <!-- Figma 버튼: figmaUrl이 있을 때만 렌더링 -->
+        <div v-if="selected.figmaUrl" class="figma-button">
+          <a :href="selected.figmaUrl" target="_blank" rel="noopener noreferrer">
+            🔗 Figma 디자인 보기
+          </a>
+        </div>
+
       </div>
     </div>
   </section>

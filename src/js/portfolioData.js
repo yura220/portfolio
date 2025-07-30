@@ -18,7 +18,8 @@ export default [
     imageTop: '/img/pf2-1.jpg',
     imageBottom: '/img/pf2-2.jpg',
     tool: 'React, React Router, CSS, Figma',
-    explanation: '해커톤에 디자이너로 참가하여 팀의 UX/UI를 총괄했고, 기획부터 디자인 시스템 구축, 프로토타입 제작까지 주도했습니다.\n디자인 구현에 필요한 인터랙션 가이드를 프론트엔드와 협업하며 구체화했으며, 결과적으로 대상을 수상하는 성과를 이끌어냈습니다.'
+    explanation: '해커톤에 디자이너로 참가하여 팀의 UX/UI를 총괄했고, 기획부터 디자인 시스템 구축, 프로토타입 제작까지 주도했습니다.\n디자인 구현에 필요한 인터랙션 가이드를 프론트엔드와 협업하며 구체화했으며, 결과적으로 대상을 수상하는 성과를 이끌어냈습니다.',
+    figmaUrl: 'https://www.figma.com/design/YfiuOOQfbfOoyrd9UncCur/%ED%95%B4%EC%BB%A4%ED%86%A4?node-id=298-2&t=JYJhhXm1J0kaAt6z-1'
   },
   {
     id: 3,
@@ -48,7 +49,8 @@ export default [
     imageTop: '/img/pf4-1.png',
     imageBottom: '/img/pf4-2.png',
     tool: 'html, css, js',
-    explanation: '기존 사이트 "세미네 부엌"을 리뉴얼한 랜딩페이지입니다.\n다크모드를 구현하고, 슬릭(Slick)을 활용한 슬라이드 기능도 적용했습니다.'
+    explanation: '기존 사이트 "세미네 부엌"을 리뉴얼한 랜딩페이지입니다.\n다크모드를 구현하고, 슬릭(Slick)을 활용한 슬라이드 기능도 적용했습니다.',
+    figmaUrl: 'https://www.figma.com/design/uVFNUPOrocwPXESUJjrFVw/%EC%83%88%EB%AF%B8%EB%84%A4%EB%B6%80%EC%97%8C-%EB%A6%AC%EB%89%B4%EC%96%BC-%EA%B8%B0%ED%9A%8D%EC%84%9C?node-id=45-37&t=2cJSub4K1Dtz6Jfw-1'
   },
   {
     id: 6,
@@ -112,10 +114,10 @@ export default [
   {
     id: 12,
     title: '수철F&B',
-    thumbnail: '/img/pf1.png',
-    imageTop: '/img/pf1.png',
-    imageBottom: '/img/pf1.png',
-    tool: 'Vue 3, Pinia, Splide, SCSS',
-    explanation: 'Vue 기반 쇼핑몰 구조 구현. 날씨 선택형 상품 추천 기능, Splide 슬라이더 구현 및 반응형 레이아웃 설계.'
+    thumbnail: '/img/pf11.jpg',
+    imageTop: '/img/pf11-1.jpg',
+    imageBottom: '/img/pf11-2.jpg',
+    tool: 'Photoshop, Illustrator, Premiere Pro',
+    explanation: '신규 브랜드 디자인을 총괄하고, 배너·전단지·메뉴판·현수막 등 온·오프라인 홍보물을 제작했습니다.\n쇼핑몰 홈페이지 디자인과 함께 영상 콘텐츠 제작도 진행하여 브랜드 아이덴티티를 다각도로 구축했습니다.'
   }
 ]
