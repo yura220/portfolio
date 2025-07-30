@@ -63,7 +63,8 @@ onMounted(() => {
             <h3 class="h6">{{ item.title }}</h3>
             <span>
             <router-link :to="`/detail/${item.id}`" class="btn">DETAILS</router-link>
-            <a :href="item.visitUrl" target="_blank" class="btn">VISIT</a>
+            <!-- visitUrl이 있을 때만 VISIT 버튼 노출 -->
+            <a v-if="item.visitUrl" :href="item.visitUrl" target="_blank" class="btn">VISIT</a>
             </span>
         </li>
         </ul>
